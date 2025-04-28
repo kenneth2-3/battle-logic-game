@@ -73,7 +73,9 @@
 
 ## Local deployment 
 
+To make a local copy of this project, you can clone it. In your IDE Terminal, type the following command:
 
+   - git clone <repository-url>
 
 ## Contributing
 
@@ -95,3 +97,9 @@ Contributions are welcome! If you have suggestions or find issues, please:
 5. Open a pull request.
 
 ---
+
+## Author
+
+Kenneth Adanma
+
+Thank you for exploring QuizRush!
