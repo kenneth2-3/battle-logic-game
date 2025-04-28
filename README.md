@@ -75,7 +75,7 @@
 
 To make a local copy of this project, you can clone it. In your IDE Terminal, type the following command:
 
-   - git clone <repository-url>
+   - git clone [repository-url](https://github.com/kenneth2-3/battle-logic-game)
 
 ## Contributing
 
