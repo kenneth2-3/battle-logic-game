@@ -43,3 +43,27 @@ class Board:
                     else:
                         print(cell_value, end=" ")
             print()
+
+    def place_ship(self, size):
+        """
+        Randomly place a ship of given size on the board.
+
+        Args:
+            size (int): Size of the ship to place.
+        """
+        placed = False
+        while not placed:
+            row = random.randint(0, self.size - 1)
+            col = random.randint(0, self.size - 1)
+            direction = random.choice(["horizontal", "vertical"])
+
+            if direction == "horizontal" and col + size <= self.size:
+                if all(self.grid[row][col + i] == '.' for i in range(size)):
+                    for i in range(size):
+                        self.grid[row][col + i] = 'S'
+                    placed = True
+            elif direction == "vertical" and row + size <= self.size:
+                if all(self.grid[row + i][col] == '.' for i in range(size)):
+                    for i in range(size):
+                        self.grid[row + i][col] = 'S'
+                    placed = True
