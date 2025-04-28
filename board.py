@@ -67,3 +67,26 @@ class Board:
                     for i in range(size):
                         self.grid[row + i][col] = 'S'
                     placed = True
+
+    def guess(self, coord):
+        """
+        Handle a player's guess on the board.
+
+        Args:
+            coord (tuple): A tuple (row, col) of the guessed coordinates.
+
+        Returns:
+            str: Result of the guess ("hit", "miss", "off", or "repeat").
+        """
+        row, col = coord
+        if row < 0 or col < 0 or row >= self.size or col >= self.size:
+            return "off"  # Guess is out of bounds
+        elif self.grid[row][col] == 'S':
+            self.grid[row][col] = 'X'  # Mark a hit
+            return "hit"
+        elif self.grid[row][col] == '.':
+            self.grid[row][col] = 'O'  # Mark a miss
+            self.missed_guesses.append(coord)  # Track missed guesses
+            return "miss"
+        else:
+            return "repeat"  # Already guessed this cell
