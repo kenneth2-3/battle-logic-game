@@ -90,3 +90,12 @@ class Board:
             return "miss"
         else:
             return "repeat"  # Already guessed this cell
+
+    def all_sunk(self):
+        """
+        Check if all ships have been sunk.
+
+        Returns:
+            bool: True if all ships are sunk, False otherwise.
+        """
+        return all(cell != 'S' for row in self.grid for cell in row)
