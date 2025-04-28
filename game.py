@@ -77,3 +77,8 @@ def start_game():
             print(Fore.RED + "Miss!")
 
         turn += 1
+
+    print(Fore.GREEN + "\n You sank all the ships!")
+    print(Fore.CYAN + f"Game completed in {turn - 1} turns.\n")
+    print(Fore.MAGENTA + "Final Board (ships revealed):")
+    board.print_board(reveal_ships=True)
