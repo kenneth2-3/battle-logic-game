@@ -99,3 +99,12 @@ class Board:
             bool: True if all ships are sunk, False otherwise.
         """
         return all(cell != 'S' for row in self.grid for cell in row)
+
+    def remaining_ships(self):
+        """
+        Count the number of remaining (not yet hit) ship parts.
+
+        Returns:
+            int: Number of remaining ship parts.
+        """
+        return sum(cell == 'S' for row in self.grid for cell in row)
