@@ -71,10 +71,31 @@ BATTLE-LOGIC-GAME/
 
 ---
 
-## How to run the project
+## How to run the project locally
 
+1. Clone the repository:
+   ```bash
+   git clone [repository url](https://github.com/kenneth2-3/battle-logic-game).git
+   cd battle-logic-game
+   ```
 
+2. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate  # For Windows: venv\Scripts\activate
+   ```
 
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the game:
+   ```bash
+   python run.py
+   ```
+
+---
 
 ## Usage
 
