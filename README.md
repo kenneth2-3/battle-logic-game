@@ -108,10 +108,32 @@ You can easily **customize** the game:
 
 ## Deployment
 
-## Deployment to GitHub Pages
+## GitHub Pages (for the code)
 
+Since this is a console app, GitHub Pages isn't used for running it, only for hosting the source code.
 
+Steps: 
 
+- Push your code to a GitHub repository.
+
+- Write a professional README (this one).
+
+## Heroku Deployment (for the console)
+
+Normally Heroku is best for web apps. This is a terminal game, but it can be adapted.
+
+if you want to deploy:
+
+1. Create a requirements.txt file:
+   ```bash
+   pip freeze > requirements.txt
+   ```
+2. Create a Procfile:
+   ```bash
+   web: node index.js
+   ```
+
+---
 
 ## Local deployment 
 
