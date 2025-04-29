@@ -87,7 +87,17 @@ BATTLE-LOGIC-GAME/
 - The game provides immediate feedback on whether your answer is correct or invalid.
 
 
+## Customization
 
+You can easily **customize** the game:
+
+- Change ship sizes in game.py inside start_game().
+
+- Modify the board display in board.py.
+
+- Add more complex ship layouts (L-shapes, diagonals).
+
+---
 
 ## Screenshots
 
