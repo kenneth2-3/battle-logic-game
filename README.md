@@ -36,20 +36,40 @@ The game is optimized for desktop environments and can be extended into web appl
 
 - **Accessible interface:** Simple command-line inputs.
 
-
-### Wireframes 
-
-### Desktop
-
-
 ## Features
+
+- Guessing System: Input guesses like B4, A2, etc.
+- Random Ship Placement: Ships are hidden and randomly placed horizontally or vertically.
+- Board Display: Shows hits, misses, and updates the board after every guess.
+- Friendly Messages: Clear feedback if a guess is invalid, repeated, a hit, or a miss.
+- Counts and displays missed guesses.
+- Uses Colorama for colored prompts and results.
+- Each game is randomly generated.
+
+---
 
 ## Technologies Used
 
+- **Python**
+- **Colorama**: for terminal colors
+- **Heroku**: (optional) deployment
+- **GitHub**: for version control and hosting
 
+---
 
 ## File Structure
 
+```
+BATTLE-LOGIC-GAME/
+├── board.py          # Contains the Board class logic
+├── game.py           # Game functions like input parsing and starting the game
+├── run.py            # Entry point to start the game
+├── requirements.txt  # List of Python packages
+├── Procfile          # For Heroku deployment (if using)
+└── README.md         # This file
+```
+
+---
 
 ## How to run the project
 
@@ -58,9 +78,14 @@ The game is optimized for desktop environments and can be extended into web appl
 
 ## Usage
 
+- Launch the game and choose a board size (between 5 and 10).
 
+- Enter guesses like A5, C3, etc.
 
-## Customization
+- Try to find and sink all the ships with as few moves as possible!
+
+- The game provides immediate feedback on whether your answer is correct or invalid.
+
 
 
 
