@@ -97,17 +97,6 @@ BATTLE-LOGIC-GAME/
 
 ---
 
-## Usage
-
-- Launch the game and choose a board size (between 5 and 10).
-
-- Enter guesses like A5, C3, etc.
-
-- Try to find and sink all the ships with as few moves as possible!
-
-- The game provides immediate feedback on whether your answer is correct or invalid.
-
-
 ## Customization
 
 You can easily **customize** the game:
