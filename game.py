@@ -74,7 +74,10 @@ def start_game():
         print(Fore.MAGENTA + "\n Play Current Board:")
         board.print_board()
         print(Fore.YELLOW + f"Ship parts remaining: {board.remaining_ships()}")
-        print(Fore.BLUE + f"Missed guesses: {board.missed_guesses}")
+        formatted_misses = [
+            f"({chr(65 + col)}{row + 1})" for row, col in board.missed_guesses
+        ]
+        print(Fore.BLUE + f"Missed guesses: {formatted_misses}")
         prompt = Fore.CYAN + f"Turn {turn} - Enter your guess (e.g., A3): "
         guess = input(prompt).strip()
         coord = parse_input(guess, size)
