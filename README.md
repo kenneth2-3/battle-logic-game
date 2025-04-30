@@ -129,16 +129,6 @@ You can easily **customize** the game:
 
 ## Deployment
 
-## GitHub Pages (for the code)
-
-Since this is a console app, GitHub Pages isn't used for running it, only for hosting the source code.
-
-Steps: 
-
-- Push your code to a GitHub repository.
-
-- Write a professional README (this one).
-
 ## Heroku Deployment (for the console)
 
 Normally Heroku is best for web apps. This is a terminal game, but it can be adapted.
@@ -162,29 +152,8 @@ To make a local copy of this project, you can clone it. In your IDE Terminal, ty
 
    - git clone [repository-url](https://github.com/kenneth2-3/battle-logic-game)
 
-## Contributing
-
-Contributions are welcome! If you have suggestions or find issues, please:
-
-1. Fork this repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Description of changes"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
-
----
-
 ## Author
 
 Kenneth Adanma
 
-Thank you for exploring QuizRush!
+Thank you for exploring Battle-logic-game!
