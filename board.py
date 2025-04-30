@@ -34,12 +34,12 @@ class Board:
         for row in range(self.size):
             print(f"{row + 1:2} ", end="")
             for col in range(self.size):
+                cell_value = self.grid[row][col]
                 if reveal_ships:
-                    print(self.grid[row][col], end=" ")
+                    print(cell_value, end=" ")
                 else:
-                    cell_value = self.grid[row][col]
                     if cell_value == 'S':
-                        print('X', end=" ")  # To hide ships during the game
+                        print('.', end=" ")  # Hide unhit ships
                     else:
                         print(cell_value, end=" ")
             print()
