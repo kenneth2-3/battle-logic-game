@@ -38,8 +38,8 @@ def start_game():
     print(Fore.YELLOW + "- Ships are hidden on the grid.")
     print(Fore.YELLOW + "- Enter your guess in the format 'A1', 'B3', etc.")
     print(Fore.YELLOW + "- Try to sink all ships with the fewest guesses.")
-    print(Fore.YELLOW + "- Enter your guesses using uppercase (e.g A1, B3).\n")
-    print(Fore.YELLOW + "- When you hit the ship it shows the 'X' symbol.")
+    print(Fore.YELLOW + "- Enter your guesses using uppercase (e.g A1, B3).")
+    print(Fore.YELLOW + "- When you hit the ship it shows the 'X' symbol.\n")
 
     while True:
         try:
