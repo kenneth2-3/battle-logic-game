@@ -40,7 +40,7 @@ def start_game():
 
     while True:
         try:
-            size = int(input("Enter grid size (5–10): "))
+            size = int(input("Enter grid size and place the ship (5–10): "))
             if 5 <= size <= 10:
                 break
             print(Fore.YELLOW + "Please enter a number between 5 and 10.")
@@ -63,7 +63,7 @@ def start_game():
         coord = parse_input(guess, size)
 
         if coord is None:
-            print(Fore.YELLOW + "Invalid input. Format should be like A3.")
+            print(Fore.RED + "Invalid input. Format should be like A3.")
             continue
 
         result = board.guess(coord)
