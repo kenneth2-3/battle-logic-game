@@ -54,7 +54,7 @@ def start_game():
 
     turn = 1
     while not board.all_sunk():
-        print(Fore.MAGENTA + "\n Current Board:")
+        print(Fore.MAGENTA + "\n Play Current Board:")
         board.print_board()
         print(Fore.YELLOW + f"Ship parts remaining: {board.remaining_ships()}")
         print(Fore.BLUE + f"Missed guesses: {board.missed_guesses}")
