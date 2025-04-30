@@ -16,6 +16,17 @@ The game is optimized for desktop environments and can be extended into web appl
 
 ---
 
+## How to play:
+
+  1. Click this *[link](https://battle-logic-game-aee4b43a316c.herokuapp.com/)* or copy this text: `https://battle-logic-game-aee4b43a316c.herokuapp.com/` and paste it in your browser's address bar.
+  2. As soon as the page is loaded, click 'RUN PROGRAM'.
+  3. Learn the rules.
+  4. Read the instruction carefully then click 'Enter' on your keyboard and have some fun.
+  5. Play one more time and try to enter different grid sizes to have even more fun.
+  6. As soon as you are tired of the game, choose "Exit".
+
+  Link to the game: *https://battle-logic-game-aee4b43a316c.herokuapp.com/*
+
 ## User Stories
 
 ## User Story
@@ -38,13 +49,7 @@ The game is optimized for desktop environments and can be extended into web appl
 
 ## Features
 
-- Guessing System: Input guesses like B4, A2, etc.
-- Random Ship Placement: Ships are hidden and randomly placed horizontally or vertically.
-- Board Display: Shows hits, misses, and updates the board after every guess.
-- Friendly Messages: Clear feedback if a guess is invalid, repeated, a hit, or a miss.
-- Counts and displays missed guesses.
-- Uses Colorama for colored prompts and results.
-- Each game is randomly generated.
+
 
 ---
 
