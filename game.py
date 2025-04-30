@@ -45,7 +45,7 @@ def start_game():
                 break
             print(Fore.YELLOW + "Please enter a number between 5 and 10.")
         except ValueError:
-            print(Fore.RED + "Invalid number. Try again.")
+            print(Fore.RED + "Invalid input. Try again.")
 
     board = Board(size)
     ship_sizes = [3, 2, 2]  # Example: 3 ships of sizes 3, 2, and 2
