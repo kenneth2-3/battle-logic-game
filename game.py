@@ -37,6 +37,23 @@ def start_game():
     - Ends the game when all ships are sunk.
     """
     print(Fore.CYAN + "Welcome to Battleships!\n")
+    print(Fore.YELLOW + "Rules:")
+    print(
+        Fore.YELLOW +
+        "- The goal is to sink all enemy ships hidden on the grid."
+    )
+    print(
+        Fore.YELLOW +
+        "- Ships are placed randomly, either horizontally or vertically."
+    )
+    print(
+        Fore.YELLOW +
+        "- Input your guesses using coordinates like A3 or B5."
+    )
+    print(
+        Fore.YELLOW +
+        "- 'X' marks a hit, 'O' marks a miss. Try to sink all ship parts!\n"
+    )
 
     while True:
         try:
