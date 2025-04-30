@@ -112,7 +112,7 @@ BATTLE-LOGIC-GAME/
 
 You can easily **customize** the game:
 
-- Change ship sizes in game.py inside start_game().
+- Change grid sizes in game.py inside start_game().
 
 - Modify the board display in board.py.
 
