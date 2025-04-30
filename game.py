@@ -34,11 +34,11 @@ def start_game():
     """
     print(Fore.CYAN + "Welcome to Battleships!\n")
     print(Fore.YELLOW + "Rules:")
-    print("- Grid size must be between 5 and 10.")
-    print("- Ships are hidden on the grid.")
-    print("- Enter your guess in the format 'A1', 'B3', etc.")
-    print("- Try to sink all ships with the fewest guesses.")
-    print("- Enter your guesses using uppercase (e.g., A1, B3).")
+    print(Fore.YELLOW + "- Grid size must be between 5 and 10.")
+    print(Fore.YELLOW + "- Ships are hidden on the grid.")
+    print(Fore.YELLOW + "- Enter your guess in the format 'A1', 'B3', etc.")
+    print(Fore.YELLOW + "- Try to sink all ships with the fewest guesses.")
+    print(Fore.YELLOW + "- Enter your guesses using uppercase (e.g., A1, B3).")
 
     while True:
         try:
