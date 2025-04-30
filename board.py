@@ -25,10 +25,8 @@ class Board:
             otherwise hides ships.
         """
         # Print column labels
-        print("  ", end="")
-        for col in range(self.size):
-            print(chr(65 + col), end=" ")
-        print()
+        col_labels = " ".join(chr(65 + col) for col in range(self.size))
+        print("   " + col_labels)
 
         # Print rows with row numbers
         for row in range(self.size):
