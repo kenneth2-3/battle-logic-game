@@ -8,16 +8,12 @@ init(autoreset=True)  # This automatically resets the color after each print
 def parse_input(user_input, size):
     """
     Parses the user's input (e.g., 'A3') into grid coordinates.
-
-    Args:
-        user_input (str): The guess entered by the player.
-        size (int): The size of the game grid.
-
-    Returns:
-        tuple: (row, col) coordinates if valid, or None if input is invalid.
+    Returns (row, col) if valid and uppercase; otherwise None.
     """
     try:
-        col = string.ascii_uppercase.index(user_input[0].upper())
+        if not user_input[0].isupper():
+            raise ValueError("Must use uppercase letter")
+        col = string.ascii_uppercase.index(user_input[0])
         row = int(user_input[1:]) - 1
         if row < 0 or col >= size:
             raise ValueError("Out of bounds")
@@ -53,6 +49,10 @@ def start_game():
     print(
         Fore.YELLOW +
         "- 'X' marks a hit, 'O' marks a miss. Try to sink all ship parts!\n"
+    )
+    print(
+        Fore.YELLOW +
+        "- Enter your guesses using uppercase (e.g., A1, B3)."
     )
 
     while True:
