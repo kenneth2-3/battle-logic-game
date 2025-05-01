@@ -154,7 +154,7 @@ You can easily **customize** the game:
 
 ## Testing 
 
-Please refer to the [TESTING.MD]() file for all test related documentation.
+Please refer to the [TESTING.MD](TESTING.md) file for all test related documentation.
 
 ---
 
