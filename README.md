@@ -149,7 +149,47 @@ You can easily **customize** the game:
 
 ## Bugs
 
++ **Solved bugs**
 
+1. The python virtual environment was not showing in the terminal.
+   - *Solution* 
+     ```bash
+     ls
+     ```
+
+     ```bash
+     source venv/bin/activate  #To activate it
+     ```
+
+2. The ships were visible to the player instead of being hidden.
+   - *Solution* rewrote the code to display '.' instead of 'S' unless the ship has been hit.(i.e turned to 'X').
+      ```python
+      def print_board(self, reveal_ships=False):
+
+      # Print column labels
+      print("  ", end="")
+      for col in range(self.size):
+        print(chr(65 + col), end=" ")
+        print()
+
+      # Print rows with row numbers
+      for row in range(self.size):
+        print(f"{row + 1:2} ", end="")
+        for col in range(self.size):
+            cell_value = self.grid[row][col]
+            if reveal_ships:
+                print(cell_value, end=" ")
+            else:
+                if cell_value == 'S':
+                    print('X', end=" ")  # To hide ships during the game
+                else:
+                    print(cell_value, end=" ")
+        print()
+      ```
+
++ **Unsolved bugs**
+
+- None
 
 ---
 
