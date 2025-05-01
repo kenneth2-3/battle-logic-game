@@ -130,6 +130,7 @@ BATTLE-LOGIC-GAME/
 ├── requirements.txt  # List of Python packages
 ├── Procfile          # For Heroku deployment
 └── README.md         # This file
+└── TESTING.md        # For test related documentation
 ```
 
 ---
