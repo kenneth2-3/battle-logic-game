@@ -241,6 +241,12 @@ Create a local copy of the GitHub repository by following one of the two process
 
 ---
 
+## Credits
+
+- Terminal menu: [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/).
+- [Heroku](https://dashboard.heroku.com/) for hosting the application.
+- Color formatting: [Colorama](https://pypi.org/project/colorama/).
+
 ## Author
 
 Kenneth Adanma
