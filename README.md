@@ -49,16 +49,50 @@ The game is optimized for desktop environments and can be extended into web appl
 
 ## Features
 
+- **When the program is loaded**
 
+   - The user can see a welcome message introducing the Battleship game.
+
+   - Followed by a detailed set of rules which are required to be followed.
+
+   - The game begins by prompting the user to choose a grid size (between 5-10).
+
+   ![Loading Program](documentation/start_game.png)
+
+- **During gameplay**
+
+   - Guess ship locations using coordinates like A1, B4, etc.
+
+   - A live board is shown after every move.
+
+   - Hits and misses are displayed in color.
+
+   - Missed guesses are tracked and formatted clearly as (A1), (B2).
+
+   - The number of turns and ship parts remaining are shown.
+
+   ![Loading Program](documentation/during_game.png)
+
+- **When the game ends**
+
+   - The player is notified when all ships are sunk, along with the number of turns taken. The full board is revealed.
+
+   ![Loading Program](documentation/end_game.png)
+
+- **When the user selects "Exit"**
+
+   - A friendly goodbye message is shown and the program will be stopped.
+
+   ![Loading Program](documentation/exit_game.png)
+   ![Loading Program](documentation/goodbye_game.png)
 
 ---
 
 ## Technologies Used
 
-- **Python**
-- **Colorama**: for terminal colors
-- **Heroku**: (optional) deployment
-- **GitHub**: for version control and hosting
+### Languages:
+
+
 
 ---
 
@@ -70,7 +104,7 @@ BATTLE-LOGIC-GAME/
 ├── game.py           # Game functions like input parsing and starting the game
 ├── run.py            # Entry point to start the game
 ├── requirements.txt  # List of Python packages
-├── Procfile          # For Heroku deployment (if using)
+├── Procfile          # For Heroku deployment
 └── README.md         # This file
 ```
 
