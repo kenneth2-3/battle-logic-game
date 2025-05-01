@@ -92,7 +92,31 @@ The game is optimized for desktop environments and can be extended into web appl
 
 ### Languages:
 
+- [Python 3.12.8](https://www.python.org/downloads/release/python-3128/): used to anchor the project and direct all application behavior.
 
+- [Javascript](https://www.javascript.com): used to provide the start script needed to run the Code Institute mock terminal in the browser.
+
+- [HTML](https://www.w3schools.com): used to construct the elements involved in building the mock terminal in the browser.
+
+### Frameworks/Libraries, Programmes and Tools:
+#### Python modules/packages:
+
+##### Standard library imports:
+
+- [random](https://docs.python.org/3/library/random.html) was used to implement pseudo-random number generation.
+- [string](https://docs.python.org/3/library/string.html) was used to provide additional tools for working with strings, such as predefined character sets and more advanced formatting capabilities.
+
+##### Third-party imports:
+
+- [Simple Terminal Menu](https://pypi.org/project/simple-term-menu/) was used to implement the menu.
+- [Colorama](https://pypi.org/project/colorama/) was used to add colors and styles to the project.
+
+#### Other tools:
+
+- [VSCode](https://code.visualstudio.com/) was used as the main tool to write and edit code.
+- [Git](https://git-scm.com/) was used for the version control of the website.
+- [GitHub](https://github.com/) was used to host the code of the website.
+- [Heroku](https://dashboard.heroku.com/) was used to deploy the project.
 
 ---
 
@@ -148,29 +172,12 @@ You can easily **customize** the game:
 
 ---
 
-## Screenshots
-
-
-
 ## Testing 
 
+Please refer to the [TESTING.MD]() file for all test related documentation.
 
 ## Deployment
 
-## Heroku Deployment (for the console)
-
-Normally Heroku is best for web apps. This is a terminal game, but it can be adapted.
-
-if you want to deploy:
-
-1. Create a requirements.txt file:
-   ```bash
-   pip freeze > requirements.txt
-   ```
-2. Create a Procfile:
-   ```bash
-   web: node index.js
-   ```
 
 ---
 
