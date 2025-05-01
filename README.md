@@ -134,32 +134,6 @@ BATTLE-LOGIC-GAME/
 
 ---
 
-## How to run the project locally
-
-1. Clone the repository:
-   ```bash
-   git clone [repository url](https://github.com/kenneth2-3/battle-logic-game).git
-   cd battle-logic-game
-   ```
-
-2. Create a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # For Windows: venv\Scripts\activate
-   ```
-
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Run the game:
-   ```bash
-   python run.py
-   ```
-
----
-
 ## Customization
 
 You can easily **customize** the game:
@@ -172,20 +146,100 @@ You can easily **customize** the game:
 
 ---
 
-## Testing 
+## Bugs
 
-Please refer to the [TESTING.MD]() file for all test related documentation.
-
-## Deployment
 
 
 ---
 
-## Local deployment 
+## Testing 
 
-To make a local copy of this project, you can clone it. In your IDE Terminal, type the following command:
+Please refer to the [TESTING.MD]() file for all test related documentation.
 
-   - git clone [repository-url](https://github.com/kenneth2-3/battle-logic-game)
+---
+
+## Deployment
+
+- The program was deployed to [Heroku](https://dashboard.heroku.com/).
+- The program can be reached by the [Link](https://battle-logic-game-aee4b43a316c.herokuapp.com/).
+
+### To deploy the project as an application that can be **run locally**:
+
+*Note:*
+  1. This project requires you to have Python installed on your local PC:
+  - `sudo apt install python3`
+
+  1. You will also need pip installed to allow the installation of modules the application uses.
+  - `sudo apt install python3-pip`
+
+Create a local copy of the GitHub repository by following one of the two processes below:
+
+- Download ZIP file:
+  1. Go to the [GitHub Repo page](https://github.com/kenneth2-3/battle-logic-game).
+  1. Click the Code button and download the ZIP file containing the project.
+  1. Extract the ZIP file to a location on your PC.
+
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  1. Run the following command
+  - `git clone https://github.com/kenneth2-3/battle-logic-game.git`
+
+### To deploy the project to Heroku so it can be run as a remote web application:
+
+- Clone the repository:
+  1. Open a folder on your computer with the terminal.
+  2. Run the following command
+  - `git clone https://github.com/kenneth2-3/battle-logic-game.git`
+
+  3. Create your own GitHub repository to host the code.
+  4. Run the command `git remote set-url origin <Your GitHub Repo Path>` to set the remote repository location to your repository.
+
+  5. Push the files to your repository with the following command:
+  `git push`
+  6. Create a Heroku account if you don't already have one here [Heroku](https://dashboard.heroku.com/apps)
+  7. Create a new Heroku application on the following page here [Heroku App](https://dashboard.heroku.com/new-app):
+
+      - ![Heroku App](documentation/new_app.png)
+   8. Go to the Deploy tab:
+
+     - ![Deploy Tab](documentation/deploy_tab.png)
+
+     - ![Deployment Method](documentation/deploy_method.png)
+
+   9. Link your GitHub account and connect the application to the repository you created. 
+
+     - ![Link GitHub account](documentation/link_to_github.png)
+
+   10. Go to the Settings tab:
+  
+     - ![Settings Tab](documentation/settings_tab.png)
+
+   11. Click "Add buildpack" and add the Python and Node.js buildpacks in the following order:
+
+     - ![Add Buildpack](documentation/buildpack.png)
+
+   12. Click "Reveal Config Vars"
+
+     - ![Reveal Config Vars](documentation/reveal_var.png)
+
+   13. Add 1 new Config Vars:
+     - Key: PORT Value: 8000
+     - *This Config was provided by [CODE INSTITUTE](https://codeinstitute.net/)*.
+
+   14. Go back to the Deploy tab:
+
+     - ![Deploy Tab](documentation/deploy_tab.png)
+
+   15. Click "Deploy Branch"
+
+     - ![Deploy Branch](documentation/deploy_branch.png)
+     - Wait for the completion of the deployment.
+     - ![Deploying Branch](documentation/deploying_branch.png)
+
+   16. Click "Open app" to launch the application inside a web page.
+     - ![View Button](documentation/view_button.png)
+
+---
 
 ## Author
 
