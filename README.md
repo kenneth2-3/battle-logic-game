@@ -189,7 +189,7 @@ You can easily **customize** the game:
 
 + **Unsolved bugs**
 
-- None
+  - None
 
 ---
 
